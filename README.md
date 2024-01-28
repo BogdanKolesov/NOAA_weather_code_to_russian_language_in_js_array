@@ -10,6 +10,7 @@
 
 import { weatherCodeData } from '../../../data/weatherCodeData';
 
+const WeatherCode = () => {
 const [currentWeather, setCurrentWeather] = useState({});
 
     const findWeatherByCode = (code) => {
@@ -24,3 +25,5 @@ return(
 {currentWeather.change ? currentWeather.change : `};
 </NewsWeatherItem>
 )
+
+}
